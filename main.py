@@ -9,23 +9,23 @@ bill = 0
 
 # Size
 if size == 'S':
-    bill += 15
-    if size == 'M':
-        bill += 20
+  bill += 15
+elif size == 'M':
+  bill += 20
 else:
     bill += 25
 
 
 #Adding Peporoni
 if add_pepperoni == 'Y':
-    if size == 'S':
-        bill += 2
-    else:
-        bill += 3
+  if size == 'S':
+    bill += 2
+  else:
+    bill += 3
 
 # Extra Cheese
 if extra_cheese == 'Y':
-    bill += 1
+  bill += 1
 
 print(f"Your final bill is: {bill}")
   
